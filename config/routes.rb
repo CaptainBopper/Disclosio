@@ -1,4 +1,7 @@
 Disclosio::Application.routes.draw do
+  resources :transactions
+
+
   devise_for :views
 
   devise_for :users

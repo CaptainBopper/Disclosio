@@ -1,0 +1,20 @@
+<h1>Listing transactions</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Transactions</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render @transactions %>
+  </tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Transaction', new_transaction_path, class: "btn btn-primary" %>

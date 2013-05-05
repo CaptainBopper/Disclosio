@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="span6 offset3">
+		<div class="well">
+			<p>
+			  <b>Description:</b>
+			  <%= @transaction.description %>
+			</p>
+		</div>
+	</div>
+</div>
+
+<%= link_to 'Edit', edit_transaction_path(@transaction) %> |
+<%= link_to 'Back', transactions_path %>
