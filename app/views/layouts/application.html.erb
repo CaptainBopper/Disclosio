@@ -14,8 +14,13 @@
                 <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
             <% end %>
 				<%= yield %>
-				<%= render 'layouts/footer' %>
+				<div class="push"></div>
 			</div>
+
+			<div class="well">
+			<%= render 'layouts/footer' %>
+			</div>	
+			
 
 		</body>
 </html>
